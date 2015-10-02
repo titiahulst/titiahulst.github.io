@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Titia Hulst | Art Historian</title>
+  <link href="application.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div id="bg">
+    <div id="main">
+      <section id="header">
+        <h1>Titia Hulst, PhD</h1>
+        <span id="title">
+          <span class="big">A</span>RT <span class="big">H</span>ISTORIAN
+        </span>
+      </section>
+      <section id="content">
+        <h3>Art markets and digital methods for art historians</h3>
+        <h3>Modern and contemporary art</h3>
+        <p>Contact: <span id="toggle-span" class="toggle">click to reveal e-mail</span></p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
+
+<script type="text/javascript">
+  var span = document.getElementById('toggle-span');
+  var base = 'titiahulst262';
+  var ext = 'gmail';
+  span.onclick = function (e) {
+    e.currentTarget.innerHTML = base + "@" + ext + ".com";
+    var classes = e.currentTarget.classList;
+    classes.remove('toggle');
+  };
+</script>
