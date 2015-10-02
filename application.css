@@ -13,7 +13,7 @@ body {
   text-align: center;
   border: 1px solid #E7E7E7;
   box-shadow: 2px 2px 4px #E7E7E7;
-  background: white;
+  background: rgba(255, 255, 255, .8)
 }
 
 #bg::after {
@@ -34,13 +34,14 @@ h1 {
   margin-bottom: 24px;
 }
 
-h3 {
+#content > p {
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#content {
-  margin-top: 25px;
+#content > p:last-child {
+  margin-top: 35px;
 }
 
 .toggle {
